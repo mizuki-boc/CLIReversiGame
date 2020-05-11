@@ -15,7 +15,6 @@ def main():
     turn = black
     cursorX = 0
     cursorY = 0
-
     #CLIゲーム処理
     while(1): cursorX,cursorY,turn = CLIdisplay(cells,turn,cursorX,cursorY)
 
@@ -64,6 +63,8 @@ def GUIdisplay(_cells,_turn,_cursorX = 0,_cursorY = 0):
 
 
 def CLIdisplay(_cells,_turn,_cursorX = 0,_cursorY = 0):
+    #説明
+    print("WASDでカーソル（カ）移動, Enterで置く")
     #変数定義
     bw = 8
     bh = 8
